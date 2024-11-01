@@ -1,6 +1,6 @@
 # Triet's Homepage
 
-[https://www.snmtriet.vercel.app](https://www.snmtriet.vercel.app)
+[https://snmtriet.vercel.app](https://snmtriet.vercel.app)
 
 ## Stack
 
@@ -12,7 +12,7 @@
 ## Project structure
 
 ```
-$PROJECT_ROOT
+$PROJECT_ROOT (src)
 │   # Pages files
 ├── views
 │   # React component files

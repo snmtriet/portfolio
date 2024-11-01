@@ -16,7 +16,7 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const storedTheme = localStorage.getItem('isDarkMode')
-    return storedTheme ? JSON.parse(storedTheme) : false
+    return storedTheme ? JSON.parse(storedTheme) : true
   })
 
   const toggleDarkMode = () => {
