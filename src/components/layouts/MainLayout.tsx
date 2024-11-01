@@ -4,6 +4,7 @@ import Header from '../ui/Header'
 import Flyout from '../ui/Flyout'
 import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import VoxelDog from '../ui/VoxelDog'
 
 const MainLayout = () => {
   const [flyoutOpen, setFlyoutOpen] = useState(false)
@@ -22,7 +23,7 @@ const MainLayout = () => {
     <main className='min-h-screen px-lg pb-md'>
       <Header flyoutOpen={flyoutOpen} toggleFlyout={toggleFlyout} />
       <div className='mx-auto min-h-screen w-full max-w-3xl px-xl pt-16 text-center'>
-        {/* <VoxelDog /> */}
+        <VoxelDog />
         <Views />
       </div>
       <Flyout flyoutOpen={flyoutOpen} toggleFlyout={toggleFlyout} />
