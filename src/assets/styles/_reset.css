@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background var(--global-transition);
+}
+
+:root {
+  --button-height: 36px;
+  --global-transition: 175ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  --mask-background-color: rgba(0, 0, 0, 0.5);
+  --mask-background-color-dark: rgba(0, 0, 0, 0.8);
+}

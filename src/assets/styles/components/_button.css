@@ -1,0 +1,37 @@
+button {
+  font-size: 14px;
+  line-height: 1;
+  height: 38px;
+  transition: var(--global-transition) background-color;
+}
+
+button.loading,
+button:disabled {
+  opacity: 0.3;
+}
+
+button.btn-primary {
+  background-color: #f0d474;
+}
+
+button.btn-primary:hover {
+  background-color: #f4e09f;
+}
+
+button.btn-secondary {
+  color: #dcdcdc;
+  background-color: #333541;
+}
+
+button.btn-secondary:hover {
+  background-color: #2d2f36;
+}
+
+button.btn-tertiary {
+  @apply text-dark-5 dark:text-light-1;
+  background-color: transparent;
+}
+
+button.btn-tertiary:hover {
+  @apply bg-dark/20 dark:bg-light/20;
+}
