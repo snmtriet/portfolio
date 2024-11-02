@@ -43,14 +43,10 @@ const CsgoMt = () => {
           >
             Stack
           </Tag>
-          <Link
-            to='https://csgomt.vercel.app'
-            className='flex items-center gap-xs'
-          >
-            <Text size='medium'>
-              NestJs, VueJs, ReactJS, MongoDB, Web Socket, Redis, Tailwind CSS
-            </Text>
-          </Link>
+
+          <Text size='medium'>
+            NestJs, VueJs, ReactJS, Tailwind, MongoDB, Web Socket, Redis
+          </Text>
         </div>
         <div className='mt-2 flex flex-col gap-lg'>
           <img
