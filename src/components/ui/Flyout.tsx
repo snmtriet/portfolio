@@ -26,7 +26,8 @@ const Flyout = (props: Props) => {
               className={({ isActive }) =>
                 cn(
                   'flex h-[46px] w-full items-center rounded-md bg-light p-lg dark:bg-dark-3',
-                  isActive && 'border border-yellow-2 text-yellow-2',
+                  isActive &&
+                    'border border-purple-1 text-purple-1 dark:border-yellow-2 dark:text-yellow-2',
                 )
               }
             >

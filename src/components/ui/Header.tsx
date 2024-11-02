@@ -18,7 +18,7 @@ const Header = (props: Props) => {
   const { isDarkMode, toggleDarkMode } = useTheme()
 
   return (
-    <div className='fixed left-1/2 z-10 mx-auto flex w-full -translate-x-1/2 items-center justify-center bg-[#ffffff40] p-md backdrop-blur-md dark:bg-[#22222480]'>
+    <div className='fixed left-1/2 z-50 mx-auto flex w-full -translate-x-1/2 items-center justify-center bg-[#ffffff40] p-md backdrop-blur-md dark:bg-[#22222480]'>
       <div className='flex w-full max-w-3xl items-center justify-between'>
         <div data-test='logo' className='mr-xl'>
           <Heading size='xl' bold>
@@ -46,7 +46,7 @@ const Header = (props: Props) => {
               className={cn(
                 'h-40 w-40 rounded border p-md transition-all',
                 flyoutOpen
-                  ? 'border-yellow-2 text-yellow-2'
+                  ? 'border-purple-1 text-purple-1 dark:border-yellow-2 dark:text-yellow-2'
                   : 'border-light-grey-3 text-current',
               )}
               onClick={toggleFlyout}

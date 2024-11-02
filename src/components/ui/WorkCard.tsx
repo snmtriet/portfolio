@@ -8,13 +8,14 @@ type Props = {
   title: string
   subTitle?: string
   link?: string
+  target?: '_blank' | '_self' | '_parent' | '_top'
 }
 
 const WorkCard = (props: Props) => {
-  const { className, thumbnail, title, subTitle, link } = props
+  const { className, thumbnail, title, subTitle, link, target } = props
   return (
     <div className={cn('flex aspect-video flex-col gap-md', className)}>
-      <Link target='_blank' to={link || '#'}>
+      <Link to={link || '#'} target={target}>
         <img src={thumbnail} alt={title} className='rounded-md border' />
       </Link>
       <div className='text-center'>

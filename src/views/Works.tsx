@@ -1,4 +1,4 @@
-import { Heading } from '@/components/shared'
+import { Container, Heading } from '@/components/shared'
 import Article from '@/components/ui/Article'
 import WorkCard from '@/components/ui/WorkCard'
 import { useEffect } from 'react'
@@ -10,7 +10,7 @@ const Works = () => {
   return (
     <div>
       <Article>
-        <div className='mx-auto mt-4 w-full max-w-xl text-left md:px-xl'>
+        <Container className='mt-4 text-left'>
           <Heading size='md' bold className='text-xl'>
             Works
           </Heading>
@@ -18,11 +18,11 @@ const Works = () => {
             <WorkCard
               title='CSGO MT'
               subTitle='Play Roulette, Coinflip, Cases & Case Battles'
-              thumbnail='/images/csgomt-site.png'
-              link='https://csgomt.vercel.app'
+              thumbnail='/images/csgomt-roulette.png'
+              link='/works/csgomt'
             />
           </div>
-        </div>
+        </Container>
       </Article>
     </div>
   )

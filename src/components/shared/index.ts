@@ -5,5 +5,17 @@ import Text from './Text'
 import Button from './Button'
 import Card from './Card'
 import Section from './Section'
+import Tag from './Tag'
+import Container from './Container'
 
-export { Loading, Spinner, Heading, Text, Button, Card, Section }
+export {
+  Loading,
+  Spinner,
+  Heading,
+  Text,
+  Button,
+  Card,
+  Section,
+  Tag,
+  Container,
+}

@@ -1,4 +1,11 @@
-import { Button, Card, Heading, Section, Text } from '@/components/shared'
+import {
+  Button,
+  Card,
+  Container,
+  Heading,
+  Section,
+  Text,
+} from '@/components/shared'
 import Article from '@/components/ui/Article'
 import WorkCard from '@/components/ui/WorkCard'
 import { useTheme } from '@/context/theme.context'
@@ -15,7 +22,7 @@ const Home = () => {
 
   return (
     <Article>
-      <div className='mx-auto w-full max-w-xl md:px-xl'>
+      <Container>
         <Card className='my-xl px-10 backdrop-blur-md'>
           <Text size='large'>
             Hello, I'm a passionate frontend developer from Vietnam!
@@ -56,16 +63,18 @@ const Home = () => {
           </Text>
         </Section>
 
-        <Link to='/works'>
-          <Button
-            variant={isDarkMode ? 'secondary' : 'primary'}
-            contentJustification='center'
-            after={<MdKeyboardArrowRight size={20} />}
-            className='mx-auto'
-          >
-            My portfolio
-          </Button>
-        </Link>
+        <div className='flex items-center justify-center'>
+          <Link to='/works'>
+            <Button
+              variant={isDarkMode ? 'secondary' : 'primary'}
+              contentJustification='center'
+              after={<MdKeyboardArrowRight size={20} />}
+              className='mx-auto'
+            >
+              My portfolio
+            </Button>
+          </Link>
+        </div>
 
         <Section className='text-left' delay={0.2}>
           <Heading
@@ -150,13 +159,14 @@ const Home = () => {
               <WorkCard
                 title='CSGO MT'
                 subTitle='Play Roulette, Coinflip, Cases & Case Battles'
-                thumbnail='/images/csgomt-site.png'
+                thumbnail='/images/csgomt-roulette.png'
                 link='https://csgomt.vercel.app'
+                target='_blank'
               />
             </div>
           </div>
         </Section>
-      </div>
+      </Container>
     </Article>
   )
 }
