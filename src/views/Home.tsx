@@ -7,7 +7,6 @@ import {
   Text,
 } from '@/components/shared'
 import Article from '@/components/ui/Article'
-import WorkCard from '@/components/ui/WorkCard'
 import { useTheme } from '@/context/theme.context'
 import { useEffect } from 'react'
 import { FaGithub, FaInstagram, FaTelegram } from 'react-icons/fa'
