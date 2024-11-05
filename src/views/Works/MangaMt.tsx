@@ -58,6 +58,11 @@ const MangaMt = () => {
             className='rounded-md'
             title='Manga info'
           />
+          <img
+            src='/images/mangamt-read.png'
+            className='rounded-md'
+            title='Manga read'
+          />
         </div>
       </Container>
     </Article>
