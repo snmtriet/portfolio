@@ -154,17 +154,6 @@ const Home = () => {
               </Button>
             </Link>
           </div>
-          <div className='mt-2'>
-            <div className='grid grid-cols-1 gap-lg sm:grid-cols-2'>
-              <WorkCard
-                title='CSGO MT'
-                subTitle='Play Roulette, Coinflip, Cases & Case Battles'
-                thumbnail='/images/csgomt-roulette.png'
-                link='https://csgomt.vercel.app'
-                target='_blank'
-              />
-            </div>
-          </div>
         </Section>
       </Container>
     </Article>

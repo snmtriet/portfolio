@@ -3,6 +3,7 @@ import { Routes } from '../../@types/routes'
 import Works from '@/views/Works'
 import NotFound from '@/views/NotFound'
 import CsgoMt from '@/views/Works/CsgoMt'
+import MangaMt from '@/views/Works/MangaMt'
 
 const appsRoute: Routes = [
   {
@@ -24,6 +25,11 @@ const appsRoute: Routes = [
     key: 'app.works.csgomt',
     path: '/works/csgomt',
     component: <CsgoMt />,
+  },
+  {
+    key: 'app.works.mangamt',
+    path: '/works/mangamt',
+    component: <MangaMt />,
   },
 ]
 

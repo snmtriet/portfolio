@@ -21,6 +21,12 @@ const Works = () => {
               thumbnail='/images/csgomt-roulette.png'
               link='/works/csgomt'
             />
+            <WorkCard
+              title='Manga MT'
+              subTitle='Free read manga online in high quality. No ads, No registration required. Just enjoy your manga'
+              thumbnail='/images/mangamt.png'
+              link='/works/mangamt'
+            />
           </div>
         </Container>
       </Article>

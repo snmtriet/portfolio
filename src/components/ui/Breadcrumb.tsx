@@ -4,12 +4,13 @@ import { IoIosArrowForward } from 'react-icons/io'
 
 type Props = {
   time: string
+  pageTitle: string
 }
 
 const Breadcrumb = (props: Props) => {
-  const { time } = props
+  const { time, pageTitle } = props
   const location = useLocation()
-  const [, prevRoute, badge] = location.pathname.split('/')
+  const [, prevRoute] = location.pathname.split('/')
   return (
     <div className='flex items-center'>
       <div className='flex items-center'>
@@ -24,7 +25,7 @@ const Breadcrumb = (props: Props) => {
         <IoIosArrowForward size={24} className='ml-0.5' />
       </div>
       <Heading size='lg' bold className='text-xl capitalize'>
-        {badge}
+        {pageTitle}
       </Heading>
       <Tag className='ml-2 bg-light-grey-2 dark:bg-dark-grey-1'>{time}</Tag>
     </div>

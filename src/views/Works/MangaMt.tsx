@@ -4,13 +4,14 @@ import Breadcrumb from '@/components/ui/Breadcrumb'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 
-const CsgoMt = () => {
+const MangaMt = () => {
   return (
     <Article>
       <Container className='text-left'>
-        <Breadcrumb time='03.2024-' pageTitle='CSGO MT' />
+        <Breadcrumb time='11.2024-' pageTitle='Manga MT' />
         <Text className='mt-2 hyphens-auto text-justify indent-4'>
-          Play Roulette, Coinflip, Cases & Case Battles
+          Free read manga online in high quality. No ads, No registration
+          required. Just enjoy your manga
         </Text>
         <div data-test='website' className='ml-4 mt-2 flex items-center gap-md'>
           <Tag
@@ -20,7 +21,7 @@ const CsgoMt = () => {
             Website
           </Tag>
           <Link
-            to='https://csgomt.vercel.app'
+            to='https://mangamt.vercel.app'
             className='flex items-center gap-xs'
           >
             <Text
@@ -28,7 +29,7 @@ const CsgoMt = () => {
               size='medium'
               className='!text-purple-1 underline-offset-2 outline-offset-2 hover:underline dark:!text-yellow-2'
             >
-              https://csgomt.vercel.app
+              https://mangamt.vercel.app
             </Text>
             <HiOutlineExternalLink
               size={20}
@@ -44,40 +45,18 @@ const CsgoMt = () => {
             Stack
           </Tag>
 
-          <Text size='medium'>
-            NestJs, VueJs, ReactJs, Tailwind, MongoDB, Web Socket, Redis
-          </Text>
+          <Text size='medium'>ReactJs, Tailwind</Text>
         </div>
         <div className='mt-2 flex flex-col gap-lg'>
           <img
-            src='/images/csgomt-roulette.png'
+            src='/images/mangamt.png'
             className='rounded-md'
-            title='Roulette'
+            title='Homepage'
           />
           <img
-            src='/images/csgomt-casebattles.png'
+            src='/images/mangamt-detail.png'
             className='rounded-md'
-            title='Case Battles'
-          />
-          <img
-            src='/images/csgomt-coinflip.png'
-            className='rounded-md'
-            title='Coinflip'
-          />
-          <img
-            src='/images/csgomt-cases.png'
-            className='rounded-md'
-            title='Cases'
-          />
-          <img
-            src='/images/csgomt-caseopening.png'
-            className='rounded-md'
-            title='Case Opening'
-          />
-          <img
-            src='/images/csgomt-marketplace.png'
-            className='rounded-md'
-            title='Marketplace'
+            title='Manga info'
           />
         </div>
       </Container>
@@ -85,4 +64,4 @@ const CsgoMt = () => {
   )
 }
 
-export default CsgoMt
+export default MangaMt

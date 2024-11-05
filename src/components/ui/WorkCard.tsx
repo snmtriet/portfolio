@@ -16,7 +16,11 @@ const WorkCard = (props: Props) => {
   return (
     <div className={cn('flex aspect-video flex-col gap-md', className)}>
       <Link to={link || '#'} target={target}>
-        <img src={thumbnail} alt={title} className='rounded-md border' />
+        <img
+          src={thumbnail}
+          alt={title}
+          className='w-full rounded-md border object-cover md:max-h-[157px]'
+        />
       </Link>
       <div className='text-center'>
         <Text bold>{title}</Text>
