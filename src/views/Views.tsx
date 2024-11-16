@@ -4,7 +4,6 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 
 const AllRoutes = () => {
   const location = useLocation()
-  const pathSegments = location.pathname?.split('/') ?? []
   return (
     <AnimatePresence
       mode='wait'
@@ -15,7 +14,7 @@ const AllRoutes = () => {
         }
       }}
     >
-      <Routes location={location} key={pathSegments[1]}>
+      <Routes location={location} key={location.pathname}>
         {publicRoutes.map((route) => {
           return (
             <Route
