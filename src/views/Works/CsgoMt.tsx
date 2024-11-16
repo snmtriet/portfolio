@@ -10,9 +10,12 @@ const CsgoMt = () => {
       <Container className='text-left'>
         <Breadcrumb time='03.2024-' pageTitle='CSGO MT' />
         <Text className='mt-2 hyphens-auto text-justify indent-4'>
-          Play Roulette, Coinflip, Cases & Case Battles
+          Roulette, Coinflip, Cases & Case Battles
         </Text>
-        <div data-test='website' className='ml-4 mt-2 flex items-center gap-md'>
+        <div
+          data-test='website'
+          className='ml-[1rem] mt-2 flex items-center gap-md'
+        >
           <Tag
             className='w-fit bg-light-grey-2 dark:bg-dark-grey-3-alt'
             uppercase
@@ -36,7 +39,10 @@ const CsgoMt = () => {
             />
           </Link>
         </div>
-        <div data-test='stack' className='ml-4 mt-1 flex items-center gap-md'>
+        <div
+          data-test='stack'
+          className='ml-[1rem] mt-1 flex items-center gap-md'
+        >
           <Tag
             className='w-fit bg-light-grey-2 dark:bg-dark-grey-3-alt'
             uppercase
