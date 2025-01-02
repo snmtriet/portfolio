@@ -10,7 +10,7 @@ const CsgoMt = () => {
       <Container className='text-left'>
         <Breadcrumb time='03.2024-' pageTitle='CSGO MT' />
         <Text className='mt-2 hyphens-auto text-justify indent-4'>
-          Roulette, Coinflip, Cases & Case Battles
+          Play Roulette, Coinflip, Cases & Case Battles.
         </Text>
         <div
           data-test='website'
