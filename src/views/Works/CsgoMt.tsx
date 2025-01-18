@@ -3,6 +3,7 @@ import Article from '@/components/ui/Article'
 import Breadcrumb from '@/components/ui/Breadcrumb'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
+import { FaCartShopping } from 'react-icons/fa6'
 
 const CsgoMt = () => {
   return (
@@ -12,6 +13,7 @@ const CsgoMt = () => {
         <Text className='mt-2 hyphens-auto text-justify indent-4'>
           Play Roulette, Coinflip, Cases & Case Battles.
         </Text>
+
         <div
           data-test='website'
           className='ml-[1rem] mt-2 flex items-center gap-md'
@@ -54,6 +56,20 @@ const CsgoMt = () => {
             NestJs, VueJs, ReactJs, Tailwind, MongoDB, Web Socket, Redis
           </Text>
         </div>
+        <div className='mt-2 flex items-center justify-center gap-md rounded bg-dark-2 p-2 text-center'>
+          <FaCartShopping className='text-yellow-2' size={20} />
+          <Text>
+            Interested in purchasing this website?{' '}
+            <a
+              href='https://t.me/snmtriet'
+              className='transition-all hover:text-yellow-2 hover:underline'
+              target='_blank'
+            >
+              <strong> Contact me!</strong>
+            </a>
+          </Text>
+        </div>
+
         <div className='mt-2 flex flex-col gap-lg'>
           <img
             src='/images/csgomt-roulette.png'
